@@ -32,6 +32,6 @@ This project presents an end-to-end data analysis pipeline for analyzing a massi
 ## How to Run This Project
 1. Clone this repository to your local machine.
 2. Download the dataset from the provided Google Drive link.
-3. Run the Python scripts in the `Scripts` folder to perform data cleaning.
+3. Run the Python script to perform data cleaning.
 4. Execute the SQL queries in your MySQL environment to build the schema and load the data.
 5. Open the `.pbix` file in Power BI Desktop to view the interactive dashboard.

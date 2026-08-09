@@ -26,12 +26,16 @@ This project presents an end-to-end data analysis pipeline for analyzing a massi
 
 ## Project Files & Links
 
-*   **Interactive Dashboard:** You can view and download the final Power BI dashboard (.pbix) file here: [Power BI Dashboard on Google Drive](https://drive.google.com/drive/folders/1BcFum2HwAbaUYkx4aslCoPleRvjyLi-r)
-*   **Dataset:** Due to GitHub's file size limits, the full dataset (2 million rows) is hosted externally. You can access the raw and cleaned CSV files here: [Dataset on Google Drive](https://drive.google.com/drive/folders/1BcFum2HwAbaUYkx4aslCoPleRvjyLi-r)
+*   **External Assets (Google Drive):** Due to GitHub's file size limits, the large files are hosted externally. You can access the **Python cleaning scripts**, the **raw and cleaned datasets (CSV)**, and the **interactive Power BI dashboard (.pbix)** here: [Project Files on Google Drive](https://drive.google.com/drive/folders/1BcFum2HwAbaUYkx4aslCoPleRvjyLi-r)
+*   **GitHub Repository Contents:**
+    *   `sql_final.sql`: The main SQL script used for database creation, table structuring, and data loading.
+    *   `Schema.mwb`: The MySQL Workbench file containing the visual relational database schema.
+    *   `Fawry_Presentation_Final .pptx`: The final project presentation detailing the analytical insights and business outcomes.
 
 ## How to Run This Project
-1. Clone this repository to your local machine.
-2. Download the dataset from the provided Google Drive link.
-3. Run the Python script to perform data cleaning.
-4. Execute the SQL queries in your MySQL environment to build the schema and load the data.
-5. Open the `.pbix` file in Power BI Desktop to view the interactive dashboard.
+1. Clone this repository to your local machine to access the SQL and presentation files.
+2. Download the Python script, the datasets, and the Power BI dashboard from the provided Google Drive link.
+3. Run the downloaded Python script locally to perform data cleaning and memory optimization on the raw dataset.
+4. Open `Schema.mwb` in MySQL Workbench to view the relational model, or directly execute `sql_final.sql` in your MySQL environment to build the database structure and load the cleaned data.
+5. Open the `.pbix` file in Power BI Desktop to interact with the dashboard.
+6. Review the `Fawry_Presentation_Final .pptx` for a comprehensive summary of the project's key findings.

@@ -199,6 +199,29 @@ FROM Transactions
 WHERE Status='Success';
 
 --------------------------------------------------
+
+SELECT
+    Transaction_ID,
+    Amount,
+    Payment_Method,
+    Status,
+    RANK() OVER (ORDER BY Amount DESC) AS Amount_Rank
+FROM Transactions;
+
+--------------------------------------------------
+
+SELECT
+    Transaction_ID,
+    Amount,
+    Processing_Time_Sec,
+    Payment_Method,
+    DENSE_RANK() OVER (
+        ORDER BY Processing_Time_Sec ASC
+    ) AS Speed_Rank
+FROM Transactions
+WHERE Status = 'Success';
+
+--------------------------------------------------
 -- Group & Having
 --------------------------------------------------
 SELECT
